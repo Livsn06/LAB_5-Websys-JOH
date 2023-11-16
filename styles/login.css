@@ -1,0 +1,270 @@
+:root{
+    --darker: #05161A;
+    --dark: #072E33;
+    --primary: #0C7076;
+    --mid: #0F969C;
+    --light: #6DA5C0;
+    --footer: #294D61;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* body{
+
+} */
+
+.header-link{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.079), 0 6px 20px 0 rgba(0, 0, 0, 0.074);
+    padding: 1.1rem 2rem;
+}
+
+.logo{
+    color: var(--darker);
+    font-size: 1.7rem;
+    cursor: pointer;
+}
+.logo-left{
+    font-weight: normal;
+}
+.logo-right{
+    font-weight: bold;
+    color: var(--primary);
+}
+
+.link-adjust{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    font-weight: 600;
+    
+}
+.link{
+    text-decoration: none;
+    color: var(--darker);
+    padding:0 1.4rem;
+    transition: all 400ms ease-in-out;
+}
+.link:hover{
+    color:  var(--primary);
+    transition: all 400ms ease-in-out;
+}
+
+.active-link{
+    color: var(--primary);
+}
+
+.login-button{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: 600;
+    text-align: left;
+    padding: 0 5px;
+}
+
+.content-main{
+    display: flex;
+    justify-content: center;
+    /* background-color: #747c7d; */
+    width: 100%;
+    height: fit-content;
+    margin: auto;
+    
+}
+
+.form-design{
+    margin: 3.6rem;
+    background-color: white;
+    border-radius: 1rem;
+    width: 60%;
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: baseline;
+    padding: 0 7rem;
+}
+
+.header-title{
+    color: var(--primary);
+    margin-bottom: 0rem;
+    font-size: 2.3rem;
+    font-weight: 700;
+}
+
+.spacer{
+    height: 14rem;
+}
+
+
+.mb{
+    margin-bottom: 1.5rem;
+    text-align: right;
+    width: 100%;
+    padding: 0;
+}
+
+.text-design-1{
+    position: relative;
+    width: 100%;
+    top: 4rem;
+}
+
+.text-design-2{
+    position: relative;
+    width: 100%;
+    top: 9.5rem;
+}
+/* .text-design-3{
+    position: relative;
+    width: 100%;
+    top: 12rem;
+} */
+/* .text-design-4{
+    position: relative;
+    width: 100%;
+    top: 17rem;
+} */
+
+input{
+    /* position */
+    position: absolute;
+    z-index: 1111;
+
+    /* size */
+    width: 100%;
+    padding: 10px 5px;
+
+    /* interface */
+    outline: 0;
+    border: 2px solid #05161a70;
+    border-left: 0;
+    border-top: 0;
+    border-right: 0;
+    /* border-radius: 10px; */
+    background-color: transparent;
+
+    /* font style */
+    font-size: 1.3em;
+    font-weight: 500;
+    letter-spacing: 1px;
+    color: #05161ac4;
+}
+
+label{
+        /* position */
+        position: absolute;
+    
+        /* size */
+        left: 3px;
+        top: 1px;
+        padding: 10px 5px;
+    
+        /* interface */
+        outline: 0;
+        /* border-radius: 10px; */
+        background-color:  white;
+    
+        /* font style */
+        font-size: 1.3em;
+        font-weight: 300;
+        color: #294d61;
+        transition: 300ms ease;
+}
+
+input:focus ~ label, 
+input:not(:placeholder-shown) ~ label{
+    background-color: white;
+    color: #294d6197;
+    padding: 0 3px;
+    font-size: medium;
+    top: -14px;
+    /* left: 10px; */
+    transition: 300ms ease-in-out;
+    z-index: 1111;
+}
+
+
+.button-field{
+    width: 100%;
+    height: fit-content;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+.form_btn{
+    background-color: var(--primary);
+    outline: 0;
+    border: 0;
+    border-radius: 0.4rem;
+    width: 100%;
+    height: 3rem;
+    font-size: 1.3rem;
+    color:  white;
+    transition: all 400ms ease-in-out;
+}
+
+
+.form_btn:hover{
+    transition: all 400ms ease-in-out;
+    background-color: var(--mid);
+}
+
+.have-account{
+    text-decoration: none;
+    color: #072E33;
+}
+.move-btn{
+    font-weight: 500;
+    transition: all 400ms ease-in-out;
+    color: var(--primary);
+}
+.move-btn:hover{
+    transition: all 400ms ease-in-out;
+    color: var(--mid);
+}
+
+
+
+
+
+/* width */
+::-webkit-scrollbar {
+    width: 5px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: transparent; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: var(--dark); 
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: var(--footer); 
+  }
+
+
+
+
+
+
+
+
+
+
+

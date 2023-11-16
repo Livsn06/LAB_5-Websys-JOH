@@ -1,0 +1,208 @@
+:root{
+    --darker: #05161A;
+    --dark: #072E33;
+    --primary: #0C7076;
+    --mid: #0F969C;
+    --light: #6DA5C0;
+    --footer: #294D61;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* body{
+    
+} */
+
+.header-link{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.079), 0 6px 20px 0 rgba(0, 0, 0, 0.074);
+    padding: 1.1rem 2rem;
+}
+
+.logo{
+    color: var(--darker);
+    font-size: 1.7rem;
+    cursor: pointer;
+}
+.logo-left{
+    font-weight: normal;
+}
+.logo-right{
+    font-weight: bold;
+    color: var(--primary);
+}
+
+.link-adjust{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    font-weight: 600;
+    
+}
+.link{
+    text-decoration: none;
+    color: var(--darker);
+    padding:0 1.4rem;
+    transition: all 400ms ease-in-out;
+}
+.link:hover{
+    color:  var(--primary);
+    transition: all 400ms ease-in-out;
+}
+
+.active-link{
+    color: var(--primary);
+}
+
+.login-button{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: 600;
+    text-align: left;
+    padding: 0 5px;
+}
+
+.bcg-image{
+    background-image: 
+    linear-gradient(to bottom, rgba(7,46,51,1) 5%, rgba(7, 46, 51, 0.54)), 
+    url('../images/web/office_work.jpg'); 
+    background-position: center;
+    background-clip:content-box;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 88vh;
+}
+
+.content-inside{
+    background-color: transparent;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    color: white;
+    padding: 11rem;
+}
+
+.content-inside h1{
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+.content-inside p{
+    font-weight: normal;
+    color: rgb(253, 253, 253);
+    font-size: 1.2rem;
+    margin-bottom: 3rem;
+}
+.content-inside .btn{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.content-inside .get-start-btn{
+    background-color: var(--primary);
+    outline: 0;
+    border: 2px solid var(--primary);
+    border-radius: 0.5rem;
+    font-size: large;
+    font-weight: lighter;
+    color: white;
+    margin: 0 1rem;
+    height: 2.3rem;
+    width: 10rem;
+    transition: all 400ms ease-in-out;
+}
+
+.content-inside .get-start-btn:hover{
+    transition: all 400ms ease-in-out;
+    background-color: var(--mid);
+    border: 2px solid var(--mid);
+}
+
+
+.content-inside .overview-btn{
+    background-color: transparent;
+    outline: 0;
+    border: 2px solid var(--primary);
+    border-radius: 0.5rem;
+    font-size: large;
+    font-weight: lighter;
+    color: white;
+    margin: 0 1rem;
+    height: 2.3rem;
+    width: 10rem;
+    transition: all 400ms ease-in-out;
+}
+
+
+.content-inside .overview-btn:hover{
+    transition: all 400ms ease-in-out;
+    background-color: #0c717667;
+    border: 2px solid var(--mid);
+}
+
+
+.section-2{
+    margin: 5rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.sub-content-header{
+    background-color: #0c717640;
+    color: var(--primary);
+    padding: 1rem 2rem;
+    text-align: center;
+    font-weight: normal;
+    width: 80%;
+    border-radius: 1rem;
+    
+}
+
+
+.sub-content-text{
+    background-color: transparent;
+    color: var(--footer);
+    padding: 1rem 2rem;
+    text-align: center;
+    font-weight: light;
+    width: 73%;
+    border-radius: 1rem;
+    
+}
+
+
+
+/* width */
+::-webkit-scrollbar {
+    width: 5px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: transparent; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: var(--dark); 
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: var(--footer); 
+  }
